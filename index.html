@@ -52,6 +52,27 @@
  </body> 
  <button>Useless Button</button>
  <button type="button" onclick="alert('Hello world!')">Click Me!</button>
+ <script>
+function Doing_Magic_1() {
+    document.getElementById("Processing_Skill").innerHTML = "A dog";
+}
+function Doing_Magic_2() {
+    document.getElementById("Processing_Skill").innerHTML = "A cat";
+}
+function Doing_Magic_3() {
+    document.getElementById("Processing_Skill").innerHTML = "There is nothing here";
+}
+</script>
+
+
+<body>
+<h1>I can do magic</h1>
+<p id="Processing_Skill">There is nothing here</p>
+
+<button type="button" onclick="Doing_Magic_1()">Summon A dog</button>
+<button type="button" onclick="Doing_Magic_2()">Summon A cat</button>
+<button type="button" onclick="Doing_Magic_3()">Vanish</button>
+ 
 
 
 <br>
