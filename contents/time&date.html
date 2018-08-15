@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<button onclick="window.location.href=window.location.href">Reload Page</button>
+
+<h1>What time is it?</h1>
+<p id="display_1"></p>
+<p id="display_2"></p>
+<p id="display_3"></p>
+
+<h2>Components</h2>
+<p id="display_year">Year is</p>
+<button onclick="document.getElementById('display_year').innerHTML ='Year is '+new Date().getFullYear()">Display Year</button>
+
+<p id="display_month">Month is</p>
+<button onclick="document.getElementById('display_month').innerHTML ='Month is '+months[new Date().getMonth()]">Display Month</button>
+
+<p id="display_day">Day is</p>
+<button onclick="document.getElementById('display_day').innerHTML ='Day is '+days[new Date().getDay()]">Display Day</button>
+
+
+</body>
+<script>
+
+var months = ["January","February","March","April","May","June","July","August","September","October","November","December"];
+var days = ["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"];
+document.getElementById("display_1").innerHTML = new Date();
+document.getElementById("display_2").innerHTML = new Date().toDateString();
+document.getElementById("display_3").innerHTML = new Date().toUTCString();
+
+</script>
+
+</body>
+</html>
